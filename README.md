@@ -7,6 +7,14 @@ Aside from some post-analysis, you must be on the SLAC computers to run these sc
 
 working on: xtcav (temporal pulse structure)
 
+### To do
+- define_exp_run_scratch.template & bash script to create many directories
+- runs is defined in bash script (after all)
+- write create_stats_h5 script
+- write load_stats_h5
+- use the load_stats_h5 in Xint_binning
+
+
 ### Files
 
 ```

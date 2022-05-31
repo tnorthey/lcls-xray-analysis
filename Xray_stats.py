@@ -1,13 +1,17 @@
 from psana import *
 import numpy as np
 import time
-# import my functions
+# my functions
 from define_evrcodes import load_evrcodes
 from define_detector_vars import load_detector_vars
-from define_exp_scratch_runs import load_exp_scratch_runs
+from define_exp_run_scratch import load_exp_run_scratch
 from define_diode_adu_thresholds import load_diode_adu_thresholds
 from safe_get import safe_get
-#from checks import checks
+
+"""
+Xray_stats; T. Northey, May 2022
+Save upstream and downstream diode readings, and mJ detector readings to the defined scratch directory 'scratch_dir', for all shots in run number 'run', in experiment 'experiment'. Variables defined in function load_exp_run_scratch in file define_exp_run_scratch.py
+"""
 
 print('Start of script.')
 
@@ -18,11 +22,11 @@ diode_avg,lower_threshold,upper_threshold,lb,ub = load_diode_adu_thresholds()
 # load EVR codes
 LASERON,LASEROFF,XRAYOFF,XRAYOFF1 = load_evrcodes()
 # define experiment e.g. 'cxilv0418', scratch directory, and list of run numbers 
-experiment,scratch_dir,runs = load_exp_scratch_runs()
-run = runs[0]
-# FILENAME:
-ds = MPIDataSource('exp=%s:run=%d'% (experiment, run))
-smldata = ds.small_data('/reg/d/psdm/cxi/%s/scratch/northeyt/Xray_stats_run%d.h5' %(experiment, run), gather_interval=100)  #This creates a 'small-data file' in your scratch folder, which is later loaded into the i_ub script
+experiment,run,scratch_dir = load_exp_run_scratch()
+
+ds = MPIDataSource('exp=%s:run=%d'% (experiment, run))  # idk what this does exactly..
+#This creates a 'small-data file' in your scratch folder, which is later loaded into the i_ub script
+smldata = ds.small_data('%s/Xray_stats_run%d.h5' %(scratch_dir, run), gather_interval=100)
 
 # load detector
 # this loading part is ~slow (2-3 secs), maybe do not use inside loop
@@ -68,9 +72,7 @@ def checks():
   ### END CHECKS
   ############################################################
 
-# TN: enumerate makes the events iteratable by assigning indices to them (I think?)
-# In python you can have 2 iterators "n" and "evt"
-Nevents = 1e5
+Nevents = 100000
 print('Begin loop')
 for n, evt in enumerate(ds.events()):
   print('n:' + str(n) + ' evt:' + str(evt)) 
@@ -85,27 +87,24 @@ for n, evt in enumerate(ds.events()):
   evt_xray = evt_xray_pull.f_21_ENRC()
   #print('evt_xray: ' + str(evt_xray))
 
-  # upstream/downstream correlation if there are non-linear effect (?)
+  # downstream diode reading
   evt_xint_pulldown = safe_get(diode_downstream, evt)
   if evt_xint_pulldown is None: continue
   evt_diode_downstream = evt_xint_pulldown.TotalIntensity()
   #print('evt_diode_downstream: ' + str(evt_diode_downstream))
 
-  # upstream x-ray intensity
+  # upstream diode reading
   evt_xint_pull = safe_get(diode_upstream, evt)
   if evt_xint_pull is None: continue
   xint = evt_xint_pull.TotalIntensity() #; print('xint: ' + str(xint))
   if (xint < lower_threshold) or (xint >= upper_threshold): continue
 
   # saving to file
-  ### I need to understand this method of saving...
   smldata.event(upstream=xint, downstream=evt_diode_downstream, evt_xray=evt_xray)
 
 # END for loop
 # final write to file
-# bins = smldata.sum(bins)  # Don't need to do it for bins array (idk why though)
 print('Final save to file..')
-#smldata.save(bins=bins)
 smldata.save()
 
 end = time.time()
