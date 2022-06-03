@@ -1,9 +1,7 @@
 from psana import *
 import numpy as np
 import time
-# my functions class
-#from myfunctions import load_diode_adu_thresholds
-#import myfunctions
+#import my functions
 from load_get_functions import *
 
 """

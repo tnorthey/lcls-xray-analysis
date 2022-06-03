@@ -2,10 +2,8 @@ from psana import *
 import numpy as np
 import time
 # my functions (should be in same directory)
-from xint_binning_vars impuort *
-from global_vars import *
 from run_sum_stats import *
-from safe_get import safe_get
+from load_get_functions import *
 
 """
 T. Northey, May 2022
@@ -17,6 +15,21 @@ For the run defined in vars script
 print('Start of script.')
 
 start = time.time()  # initialise timer
+
+# load diode and ADU detector thresholds
+diode_avg,lower_threshold,upper_threshold,lb,ub = load_diode_adu_thresholds()
+# load EVR codes
+LASERON,LASEROFF,XRAYOFF,XRAYOFF1 = load_evrcodes()
+# define experiment e.g. 'cxilv0418', scratch directory, and list of run numbers 
+experiment,run,scratch_dir = load_exp_run_scratch()
+
+ds = MPIDataSource('exp=%s:run=%d'% (experiment, run))  # idk what this does exactly..
+#This creates a 'small-data file' in your scratch folder, which is later loaded into the i_ub script
+smldata = ds.small_data('%s/Xray_stats_run%d.h5' %(scratch_dir, run), gather_interval=100)
+
+# load detector
+# this loading part is ~slow (2-3 secs), maybe do not use inside loop
+front,diode_upstream,diode_downstream,x_ray,electron,uvint,stageencoder,ttfltpos,chamber_pressure,det_z,evr = load_detector_vars(experiment,run)
 
 print('Binning detector pixel arrays into %d percentiles' % npercentiles)
 print('percentiles:')
@@ -89,6 +102,7 @@ def get_img():
 
 # TN: enumerate makes the events iteratable by assigning indices to them (I think?)
 # In python you can have 2 iterators "n" and "evt"
+Nevents = 100000
 for n, evt in enumerate(ds.events()):
   print('n:' + str(n) + ' evt:' + str(evt)) 
     

@@ -14,22 +14,21 @@ working on: xtcav (temporal pulse structure)
 - write load_stats_h5
 - use the load_stats_h5 in Xint_binning
 
+### Workflow
+
+1. define the experiment name and run number in `define_experiment_run.py`
+2. Xray_stats: reads diode data for specified experiment and run and saves it to scratch directory
+3. : creates percentiles.h5 from the stats data (NOT DONE)
+4. Xint_binning: Bins pixel data into each intensity percentile (loads percentiles.h5)
+5. plot data (NOT DONE)
+6. xtcav binning (NOT DONE)
+
 
 ### Files
 
 ```
-define_detector_vars.py
-define_diode_adu_thresholds.py
-define_evrcodes.py
-define_exp_scratch_runs.py
-get_xint.py
-load_h5data.py
-print_npstats.py
-radialavg.py
-README.md
-safe_get.py
-test.py
 Xray_stats.py
+...
 ```
 
 ### Logic / code structure
@@ -38,16 +37,15 @@ Xray_stats.py
 
 Contain functions that define variables used often. May need to change diode_adu_thresholds, experiment name, scratch directory location, and list of runs (define_exp_scratch_runs)
 
-#### Other non-capitalised functions
+#### Other functions
 
-`get_xint.py`; gets the X-ray intensity readings
-`load_h5data.py`; loads data with the key 'key' from a h5 file
-`print_npstats.py`; print statistics about a numpy array (mean, median, percentiles, range, st. dev.)
-`radialavg.py`; radial average of data into nbins radial q-bins.
+`get_xint`; gets the X-ray intensity readings
+`load_h5data`; loads data with the key 'key' from a h5 file
+`print_np_stats`; print statistics about a numpy array (mean, median, percentiles, range, st. dev.)
+`radialavg`; radial average of data into nbins radial q-bins.
   nbins must be an integer.
   data and q must be numpy arrays of the same size.
-`safe_get.py`;
-`test.py`;
+`safe_get`;
 
 
 
