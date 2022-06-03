@@ -1,12 +1,10 @@
 from psana import *
 import numpy as np
 import time
-# my functions
-from define_evrcodes import load_evrcodes
-from define_detector_vars import load_detector_vars
-from define_exp_run_scratch import load_exp_run_scratch
-from define_diode_adu_thresholds import load_diode_adu_thresholds
-from safe_get import safe_get
+# my functions class
+#from myfunctions import load_diode_adu_thresholds
+#import myfunctions
+from load_get_functions import *
 
 """
 Xray_stats; T. Northey, May 2022

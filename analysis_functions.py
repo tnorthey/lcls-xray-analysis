@@ -1,5 +1,14 @@
 import numpy as np
 
+# print basic stats for numpy array
+def print_np_stats(dset):
+ print('length:  %d' % len(dset))
+ print('mean:    %f' % np.mean(dset))
+ print('median:  %f' % np.median(dset))
+ print('minimum: %f' % np.min(dset))
+ print('maximum: %f' % np.max(dset))
+ print('st. dev: %f' % np.std(dset))
+    
 def radial_avg(q,data,nbins):
   """
   T. Northey, May 2022
