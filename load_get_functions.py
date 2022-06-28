@@ -1,5 +1,4 @@
-"""Define thresholds, EVR codes, scratch directory
-safe_get, Detector, load h5 data"""
+"""Define thresholds, EVR codes, safe_get, Detector, load h5 data"""
 
 import h5py
 from define_experiment_run import experiment, run
@@ -23,11 +22,6 @@ def load_evrcodes():
     XRAYOFF = 162
     XRAYOFF1 = 163
     return LASERON, LASEROFF, XRAYOFF, XRAYOFF1
-
-def load_exp_run_scratch():
-    """return experiment name, run number, scratch directory"""
-    scratch_dir = '/reg/d/psdm/cxi/%s/scratch/northeyt/' % experiment
-    return experiment, run, scratch_dir
 
 def safe_get(det, evt):
     """try to return the event"""

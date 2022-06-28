@@ -1,0 +1,13 @@
+imports done.
+start of loop...
+Using file 39-end.data for dark reference
+Using file 40-end.data for lasing off reference
+Iterations done: 297
+Equal 0:
+703
+Agreement > 0.9:
+0
+Agreement > 0.8:
+0
+Agreement > 0.7:
+0

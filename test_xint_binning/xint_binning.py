@@ -13,7 +13,8 @@ from psana import MPIDataSource
 from run_sum_stats import xint_max, percentiles
 from checks import checks
 from load_get_functions import load_diode_adu_thresholds, load_evrcodes,\
-        load_exp_run_scratch, load_detector_vars, safe_get
+        load_detector_vars, safe_get
+from define_experiment_run import experiment, run, scratch_dir, Nevents
 
 print('Start of script.')
 
@@ -23,8 +24,6 @@ start = time.time()  # initialise timer
 diode_avg, lower_threshold, upper_threshold, lb, ub = load_diode_adu_thresholds()
 # load EVR codes
 LASERON, LASEROFF, XRAYOFF, XRAYOFF1 = load_evrcodes()
-# define experiment e.g. 'cxilv0418',  scratch directory,  and list of run numbers
-experiment, run, scratch_dir = load_exp_run_scratch()
 
 ds = MPIDataSource('exp=%s:run=%d'% (experiment, run))
 smldata = ds.small_data('%sxint_binning_run%d.h5' %(scratch_dir, run), gather_interval=100)
@@ -69,7 +68,6 @@ def get_img(_evt):
         return False
     return _img
 
-Nevents = 10
 for n, evt in enumerate(ds.events()):
     print('n:' + str(n) + ' evt:' + str(evt))
 
