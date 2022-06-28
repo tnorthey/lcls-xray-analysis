@@ -7,7 +7,7 @@ run = 43
 ds = psana.DataSource('exp=cxilv0418:run='+str(run)+':smd')
   
 XTCAVRetrieval = LasingOnCharacterization()
-Nevents = 1000
+Nevents = 800
 agreement = np.zeros(Nevents)
 c = 0
 print('start of loop...')
@@ -18,11 +18,16 @@ for i, evt in enumerate(ds.events()):
     XTCAVRetrieval.processEvent(evt)
     # method 1: center-of-mass
     t, powerCOM = XTCAVRetrieval.xRayPower(method='COM')
-    if (t is None) or (powerCOM is None): continue
+    if (t is None) or (powerCOM is None):
+        print('t1 or powerCOM is None')
+        continue
     # method 2: RMS
     t, powerRMS = XTCAVRetrieval.xRayPower(method='RMS')
-    if (t is None) or (powerRMS is None): continue
+    if (t is None) or (powerRMS is None): 
+        print('t2 or powerRMS is None')
+        continue
     agreement[c] = XTCAVRetrieval.reconstructionAgreement()
+    print(agreement[c])
     c += 1
 
 print('Iterations done: %d' % c)
