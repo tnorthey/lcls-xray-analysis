@@ -1,43 +1,45 @@
-from psana import *
+"""Define thresholds, EVR codes, scratch directory
+safe_get, Detector, load h5 data"""
+
 import h5py
 from define_experiment_run import experiment, run
+from psana import MPIDataSource, Detector
 
 def load_diode_adu_thresholds():
-    #These diode values are from the diode which measures the pulse by pulse X-ray pulse intensity. 
+    """specify diode and pixel thresholds"""
+    #These diode values are from the diode which measures the pulse by pulse X-ray pulse intensity.
     diode_avg = 25000
     lower_threshold = 10
     upper_threshold = 50000
-    # Each pixel threshold; ADU or keV units 
-    lb = 2	# lower bound (ADU) for a hit
-    ub = 80    # Upper bound (ADU) for a hit
+    # Each pixel threshold; ADU or keV units
+    lb = 2 # lower bound (ADU) for a hit
+    ub = 80 # Upper bound (ADU) for a hit
     return diode_avg, lower_threshold, upper_threshold, lb, ub
 
-
 def load_evrcodes():
-    # EVR codes
-    LASERON  = 183
+    """Define EVR codes"""
+    LASERON = 183
     LASEROFF = 184
-    XRAYOFF  = 162
+    XRAYOFF = 162
     XRAYOFF1 = 163
     return LASERON, LASEROFF, XRAYOFF, XRAYOFF1
 
-
-def load_exp_run_scratch(): 
+def load_exp_run_scratch():
+    """return experiment name, run number, scratch directory"""
     scratch_dir = '/reg/d/psdm/cxi/%s/scratch/northeyt/' % experiment
     return experiment, run, scratch_dir
 
-
 def safe_get(det, evt):
+    """try to return the event"""
     try:
         return det.get(evt)
-    except Exception:
+    except:
+        print('safe_get: Error getting event, returning.')
         return None
 
-
-def load_detector_vars(experiment, run):
-    #run = 43  # for initial detector setup; changes later when looping over runs
-    ds = MPIDataSource('exp=%s:run=%d'% (experiment, run)) 
-    
+def load_detector_vars(_experiment, _run):
+    """loads detector variables"""
+    ds = MPIDataSource('exp=%s:run=%d'% (_experiment, _run))
     front = Detector('jungfrau4M', ds.env())
     diode_upstream = Detector('CXI-DG2-BMMON', ds.env())
     diode_downstream = Detector('CXI-DG3-BMMON', ds.env())
@@ -58,23 +60,21 @@ def load_detector_vars(experiment, run):
         evrcodes_otherdetector = evr(evt0)
         if evrcodes_otherdetector is None:
             print('evr error')
-        else:
-            print('evr detector found')
-    
-    return front, diode_upstream, diode_downstream, x_ray, electron, uvint, stageencoder, ttfltpos, chamber_pressure, det_z, evr
+    return front, diode_upstream, diode_downstream, x_ray, electron,\
+        uvint, stageencoder, ttfltpos, chamber_pressure, det_z, evr
 
-# Load the "key" array from a h5 file
 def load_h5data(fname, key):
+    """Load the "key" array from a h5 file"""
     try:
         f = h5py.File(fname, 'r')
-    except Exception as e:
-        print('Error: %s' % e)
+    except IOError:
+        print('load_h5data: Error loading h5file, returning.')
         return False
     print(f.keys())
     try:
         dset = f[key]
-    except Exception as e:
-        print('%s error: %s' % (key, e))
+    except:
+        print('load_h5data: Error reading dataset key, returning.')
         return False
     print(dset.shape)
     return dset
