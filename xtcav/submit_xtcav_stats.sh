@@ -21,7 +21,7 @@
 
 # This will email me when the job is finished (Just put your email in the second line)
 ##SBATCH --mail-type=END
-##SBATCH --mail-user=thomas.northey@pm.me
+##SBATCH --mail-user=fake@email.com
 
 # This runs the job
 source /reg/g/psdm/etc/psconda.sh
