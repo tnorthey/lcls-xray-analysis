@@ -15,6 +15,7 @@ from psana import MPIDataSource
 from xtcav2.LasingOnCharacterization import LasingOnCharacterization
 # import my functions
 from checks import checks
+from load_get_functions import load_evrcodes, load_detector_vars
 from define_experiment_run import experiment, run, scratch_dir, Nevents
 
 print('Start of script.')
@@ -22,6 +23,14 @@ print('Run: %d' % run)
 
 ds = MPIDataSource('exp=%s:run=%d:smd'% (experiment, run))  # data source
 smldata = ds.small_data('%sxtcav_stats_run%d.h5' % (scratch_dir, run), gather_interval=100)
+
+# load EVR codes
+LASERON, LASEROFF, XRAYOFF, XRAYOFF1 = load_evrcodes()
+
+# load detector
+# this loading part is ~slow (2-3 secs), maybe do not use inside loop
+front, diode_upstream, diode_downstream, x_ray, electron, uvint, stageencoder, ttfltpos,\
+chamber_pressure, det_z, evr = load_detector_vars(ds)
 
 XTCAVRetrieval = LasingOnCharacterization()
 
@@ -37,8 +46,10 @@ def peak_maxima(t, p):
     try:
         len(imax)
     except TypeError:
+	print('peak_maxima: len(imax) TypeError, return False')
         return False   # if there's no len, exit
     if len(imax) < 2:  # if there's 0 or 1 local maximum, exit
+	print('peak_maxima: len(imax) < 2, return False')
         return False
     ipeaks = np.zeros(2, dtype=int)
     for _i in range(2):
@@ -53,32 +64,38 @@ def peak_maxima(t, p):
 
 print('start of loop...')
 for i, evt in enumerate(ds.events()):
-    print('iteration %i' % i)
-    # Add: stop after N events
     if i > Nevents:
         break
+    print('iteration %i' % i)
+    if not checks(evt, evr, XRAYOFF, x_ray, electron, diode_downstream, det_z):
+        continue
     XTCAVRetrieval.processEvent(evt)
     # method 1: center-of-mass
     tCOM, powerCOM = XTCAVRetrieval.xRayPower(method='COM')
     if (tCOM is None) or (powerCOM is None):
         print('tCOM or powerCOM is None')
         continue
-    tCOM, powerCOM = squeeze(tCOM, powerCOM)
+    else:
+    	tCOM, powerCOM = squeeze(tCOM, powerCOM)
     # method 2: RMS
     tRMS, powerRMS = XTCAVRetrieval.xRayPower(method='RMS')
     if (tRMS is None) or (powerRMS is None):
         print('tRMS or powerRMS is None')
         continue
-    tRMS, powerRMS = squeeze(tRMS, powerRMS)
+    else:
+    	tRMS, powerRMS = squeeze(tRMS, powerRMS)
     # peak maxima and delta_t
     if not peak_maxima(tCOM, powerCOM):
         continue
-    imax1_COM, imax2_COM, dt_COM = peak_maxima(tCOM, powerCOM)
+    else:
+    	imax1_COM, imax2_COM, dt_COM = peak_maxima(tCOM, powerCOM)
     if not peak_maxima(tRMS, powerRMS):
         continue
-    imax1_RMS, imax2_RMS, dt_RMS = peak_maxima(tRMS, powerRMS)
+    else:
+    	imax1_RMS, imax2_RMS, dt_RMS = peak_maxima(tRMS, powerRMS)
     # agreement between two methods
     agreement = XTCAVRetrieval.reconstructionAgreement()
+    print(agreement)
     # save to file
     smldata.event(tCOM=tCOM, tRMS=tRMS, powerCOM=powerCOM, powerRMS=powerRMS,
                   dt_COM=dt_COM, dt_RMS=dt_RMS,

@@ -33,14 +33,14 @@ smldata = ds.small_data('%sxray_stats_run%d.h5' %(scratch_dir, run), gather_inte
 # load detector
 # this loading part is ~slow (2-3 secs), maybe do not use inside loop
 front, diode_upstream, diode_downstream, x_ray, electron, uvint, stageencoder, ttfltpos,\
-chamber_pressure, det_z, evr = load_detector_vars(experiment, run)
+chamber_pressure, det_z, evr = load_detector_vars(ds)
 
 print('Begin loop')
 for n, evt in enumerate(ds.events()):
     print('n:' + str(n) + ' evt:' + str(evt))
     ds.break_after(Nevents)
 
-    if not checks(evt, evr, x_ray, electron, diode_downstream, XRAYOFF, det_z):
+    if not checks(evt, evr, XRAYOFF, x_ray, electron, diode_downstream, det_z):
         continue
 
     evt_xray_pull = safe_get(x_ray, evt)

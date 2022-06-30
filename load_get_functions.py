@@ -31,9 +31,8 @@ def safe_get(det, evt):
         print('safe_get: Error getting event, returning.')
         return None
 
-def load_detector_vars(_experiment, _run):
+def load_detector_vars(ds):
     """loads detector variables"""
-    ds = MPIDataSource('exp=%s:run=%d'% (_experiment, _run))
     front = Detector('jungfrau4M', ds.env())
     diode_upstream = Detector('CXI-DG2-BMMON', ds.env())
     diode_downstream = Detector('CXI-DG3-BMMON', ds.env())

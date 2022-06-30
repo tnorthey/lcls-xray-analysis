@@ -1,0 +1,1982 @@
+Start of script.
+Run: 43
+start of loop...
+iteration 0
+Using file 39-end.data for dark reference
+Using file 40-end.data for lasing off reference
+tCOM is None
+iteration 1
+tCOM is None
+iteration 2
+tCOM is None
+iteration 3
+tCOM is None
+iteration 4
+tCOM is None
+iteration 5
+tCOM is None
+iteration 6
+tCOM is None
+iteration 7
+tCOM is None
+iteration 8
+tCOM is None
+iteration 9
+tCOM is None
+iteration 10
+tCOM is None
+iteration 11
+tCOM is None
+iteration 12
+tCOM is None
+iteration 13
+tCOM is None
+iteration 14
+tCOM is None
+iteration 15
+tCOM is None
+iteration 16
+tCOM is None
+iteration 17
+tCOM is None
+iteration 18
+tCOM is None
+iteration 19
+tCOM is None
+iteration 20
+tCOM is None
+iteration 21
+tCOM is None
+iteration 22
+tCOM is None
+iteration 23
+tCOM is None
+iteration 24
+tCOM is None
+iteration 25
+tCOM is None
+iteration 26
+tCOM is None
+iteration 27
+tCOM is None
+iteration 28
+tCOM is None
+iteration 29
+tCOM is None
+iteration 30
+tCOM is None
+iteration 31
+tCOM is None
+iteration 32
+tCOM is None
+iteration 33
+tCOM is None
+iteration 34
+iteration 35
+tCOM is None
+iteration 36
+tCOM is None
+iteration 37
+tCOM is None
+iteration 38
+tCOM is None
+iteration 39
+tCOM is None
+iteration 40
+tCOM is None
+iteration 41
+tCOM is None
+iteration 42
+tCOM is None
+iteration 43
+tCOM is None
+iteration 44
+tCOM is None
+iteration 45
+tCOM is None
+iteration 46
+tCOM is None
+iteration 47
+tCOM is None
+iteration 48
+tCOM is None
+iteration 49
+tCOM is None
+iteration 50
+tCOM is None
+iteration 51
+tCOM is None
+iteration 52
+tCOM is None
+iteration 53
+tCOM is None
+iteration 54
+tCOM is None
+iteration 55
+tCOM is None
+iteration 56
+tCOM is None
+iteration 57
+tCOM is None
+iteration 58
+tCOM is None
+iteration 59
+tCOM is None
+iteration 60
+tCOM is None
+iteration 61
+tCOM is None
+iteration 62
+tCOM is None
+iteration 63
+tCOM is None
+iteration 64
+tCOM is None
+iteration 65
+tCOM is None
+iteration 66
+tCOM is None
+iteration 67
+tCOM is None
+iteration 68
+tCOM is None
+iteration 69
+tCOM is None
+iteration 70
+tCOM is None
+iteration 71
+iteration 72
+tCOM is None
+iteration 73
+tCOM is None
+iteration 74
+tCOM is None
+iteration 75
+tCOM is None
+iteration 76
+tCOM is None
+iteration 77
+tCOM is None
+iteration 78
+tCOM is None
+iteration 79
+tCOM is None
+iteration 80
+tCOM is None
+iteration 81
+tCOM is None
+iteration 82
+tCOM is None
+iteration 83
+tCOM is None
+iteration 84
+tCOM is None
+iteration 85
+tCOM is None
+iteration 86
+tCOM is None
+iteration 87
+tCOM is None
+iteration 88
+tCOM is None
+iteration 89
+tCOM is None
+iteration 90
+tCOM is None
+iteration 91
+tCOM is None
+iteration 92
+tCOM is None
+iteration 93
+tCOM is None
+iteration 94
+tCOM is None
+iteration 95
+tCOM is None
+iteration 96
+tCOM is None
+iteration 97
+tCOM is None
+iteration 98
+tCOM is None
+iteration 99
+tCOM is None
+iteration 100
+tCOM is None
+iteration 101
+tCOM is None
+iteration 102
+tCOM is None
+iteration 103
+tCOM is None
+iteration 104
+tCOM is None
+iteration 105
+tCOM is None
+iteration 106
+tCOM is None
+iteration 107
+tCOM is None
+iteration 108
+iteration 109
+tCOM is None
+iteration 110
+tCOM is None
+iteration 111
+tCOM is None
+iteration 112
+tCOM is None
+iteration 113
+tCOM is None
+iteration 114
+tCOM is None
+iteration 115
+tCOM is None
+iteration 116
+tCOM is None
+iteration 117
+tCOM is None
+iteration 118
+tCOM is None
+iteration 119
+tCOM is None
+iteration 120
+tCOM is None
+iteration 121
+tCOM is None
+iteration 122
+tCOM is None
+iteration 123
+tCOM is None
+iteration 124
+tCOM is None
+iteration 125
+tCOM is None
+iteration 126
+tCOM is None
+iteration 127
+tCOM is None
+iteration 128
+tCOM is None
+iteration 129
+tCOM is None
+iteration 130
+tCOM is None
+iteration 131
+tCOM is None
+iteration 132
+tCOM is None
+iteration 133
+tCOM is None
+iteration 134
+tCOM is None
+iteration 135
+tCOM is None
+iteration 136
+tCOM is None
+iteration 137
+tCOM is None
+iteration 138
+tCOM is None
+iteration 139
+tCOM is None
+iteration 140
+tCOM is None
+iteration 141
+tCOM is None
+iteration 142
+tCOM is None
+iteration 143
+tCOM is None
+iteration 144
+tCOM is None
+iteration 145
+iteration 146
+tCOM is None
+iteration 147
+tCOM is None
+iteration 148
+tCOM is None
+iteration 149
+tCOM is None
+iteration 150
+tCOM is None
+iteration 151
+tCOM is None
+iteration 152
+tCOM is None
+iteration 153
+tCOM is None
+iteration 154
+tCOM is None
+iteration 155
+tCOM is None
+iteration 156
+tCOM is None
+iteration 157
+tCOM is None
+iteration 158
+tCOM is None
+iteration 159
+tCOM is None
+iteration 160
+tCOM is None
+iteration 161
+tCOM is None
+iteration 162
+tCOM is None
+iteration 163
+tCOM is None
+iteration 164
+tCOM is None
+iteration 165
+tCOM is None
+iteration 166
+tCOM is None
+iteration 167
+tCOM is None
+iteration 168
+tCOM is None
+iteration 169
+tCOM is None
+iteration 170
+tCOM is None
+iteration 171
+tCOM is None
+iteration 172
+tCOM is None
+iteration 173
+tCOM is None
+iteration 174
+tCOM is None
+iteration 175
+tCOM is None
+iteration 176
+tCOM is None
+iteration 177
+tCOM is None
+iteration 178
+tCOM is None
+iteration 179
+tCOM is None
+iteration 180
+tCOM is None
+iteration 181
+tCOM is None
+iteration 182
+iteration 183
+tCOM is None
+iteration 184
+tCOM is None
+iteration 185
+tCOM is None
+iteration 186
+tCOM is None
+iteration 187
+tCOM is None
+iteration 188
+tCOM is None
+iteration 189
+tCOM is None
+iteration 190
+tCOM is None
+iteration 191
+tCOM is None
+iteration 192
+tCOM is None
+iteration 193
+tCOM is None
+iteration 194
+tCOM is None
+iteration 195
+tCOM is None
+iteration 196
+tCOM is None
+iteration 197
+tCOM is None
+iteration 198
+tCOM is None
+iteration 199
+tCOM is None
+iteration 200
+tCOM is None
+iteration 201
+tCOM is None
+iteration 202
+tCOM is None
+iteration 203
+tCOM is None
+iteration 204
+tCOM is None
+iteration 205
+tCOM is None
+iteration 206
+tCOM is None
+iteration 207
+tCOM is None
+iteration 208
+tCOM is None
+iteration 209
+tCOM is None
+iteration 210
+tCOM is None
+iteration 211
+tCOM is None
+iteration 212
+tCOM is None
+iteration 213
+tCOM is None
+iteration 214
+tCOM is None
+iteration 215
+tCOM is None
+iteration 216
+tCOM is None
+iteration 217
+tCOM is None
+iteration 218
+tCOM is None
+iteration 219
+iteration 220
+tCOM is None
+iteration 221
+tCOM is None
+iteration 222
+tCOM is None
+iteration 223
+tCOM is None
+iteration 224
+tCOM is None
+iteration 225
+tCOM is None
+iteration 226
+tCOM is None
+iteration 227
+tCOM is None
+iteration 228
+tCOM is None
+iteration 229
+tCOM is None
+iteration 230
+tCOM is None
+iteration 231
+tCOM is None
+iteration 232
+tCOM is None
+iteration 233
+tCOM is None
+iteration 234
+tCOM is None
+iteration 235
+tCOM is None
+iteration 236
+tCOM is None
+iteration 237
+tCOM is None
+iteration 238
+tCOM is None
+iteration 239
+tCOM is None
+iteration 240
+tCOM is None
+iteration 241
+tCOM is None
+iteration 242
+tCOM is None
+iteration 243
+tCOM is None
+iteration 244
+tCOM is None
+iteration 245
+tCOM is None
+iteration 246
+tCOM is None
+iteration 247
+tCOM is None
+iteration 248
+tCOM is None
+iteration 249
+tCOM is None
+iteration 250
+tCOM is None
+iteration 251
+tCOM is None
+iteration 252
+tCOM is None
+iteration 253
+tCOM is None
+iteration 254
+tCOM is None
+iteration 255
+tCOM is None
+iteration 256
+iteration 257
+tCOM is None
+iteration 258
+tCOM is None
+iteration 259
+tCOM is None
+iteration 260
+tCOM is None
+iteration 261
+tCOM is None
+iteration 262
+tCOM is None
+iteration 263
+tCOM is None
+iteration 264
+tCOM is None
+iteration 265
+tCOM is None
+iteration 266
+tCOM is None
+iteration 267
+tCOM is None
+iteration 268
+tCOM is None
+iteration 269
+tCOM is None
+iteration 270
+tCOM is None
+iteration 271
+tCOM is None
+iteration 272
+tCOM is None
+iteration 273
+tCOM is None
+iteration 274
+tCOM is None
+iteration 275
+tCOM is None
+iteration 276
+tCOM is None
+iteration 277
+tCOM is None
+iteration 278
+tCOM is None
+iteration 279
+tCOM is None
+iteration 280
+tCOM is None
+iteration 281
+tCOM is None
+iteration 282
+tCOM is None
+iteration 283
+tCOM is None
+iteration 284
+tCOM is None
+iteration 285
+tCOM is None
+iteration 286
+tCOM is None
+iteration 287
+tCOM is None
+iteration 288
+tCOM is None
+iteration 289
+tCOM is None
+iteration 290
+tCOM is None
+iteration 291
+tCOM is None
+iteration 292
+tCOM is None
+iteration 293
+iteration 294
+tCOM is None
+iteration 295
+tCOM is None
+iteration 296
+tCOM is None
+iteration 297
+tCOM is None
+iteration 298
+tCOM is None
+iteration 299
+tCOM is None
+iteration 300
+tCOM is None
+iteration 301
+tCOM is None
+iteration 302
+tCOM is None
+iteration 303
+tCOM is None
+iteration 304
+tCOM is None
+iteration 305
+tCOM is None
+iteration 306
+tCOM is None
+iteration 307
+tCOM is None
+iteration 308
+tCOM is None
+iteration 309
+tCOM is None
+iteration 310
+tCOM is None
+iteration 311
+tCOM is None
+iteration 312
+tCOM is None
+iteration 313
+tCOM is None
+iteration 314
+tCOM is None
+iteration 315
+tCOM is None
+iteration 316
+tCOM is None
+iteration 317
+tCOM is None
+iteration 318
+tCOM is None
+iteration 319
+tCOM is None
+iteration 320
+tCOM is None
+iteration 321
+tCOM is None
+iteration 322
+tCOM is None
+iteration 323
+tCOM is None
+iteration 324
+tCOM is None
+iteration 325
+tCOM is None
+iteration 326
+tCOM is None
+iteration 327
+tCOM is None
+iteration 328
+tCOM is None
+iteration 329
+tCOM is None
+iteration 330
+iteration 331
+tCOM is None
+iteration 332
+tCOM is None
+iteration 333
+tCOM is None
+iteration 334
+tCOM is None
+iteration 335
+tCOM is None
+iteration 336
+tCOM is None
+iteration 337
+tCOM is None
+iteration 338
+tCOM is None
+iteration 339
+tCOM is None
+iteration 340
+tCOM is None
+iteration 341
+tCOM is None
+iteration 342
+tCOM is None
+iteration 343
+tCOM is None
+iteration 344
+tCOM is None
+iteration 345
+tCOM is None
+iteration 346
+tCOM is None
+iteration 347
+tCOM is None
+iteration 348
+tCOM is None
+iteration 349
+tCOM is None
+iteration 350
+tCOM is None
+iteration 351
+tCOM is None
+iteration 352
+tCOM is None
+iteration 353
+tCOM is None
+iteration 354
+tCOM is None
+iteration 355
+tCOM is None
+iteration 356
+tCOM is None
+iteration 357
+tCOM is None
+iteration 358
+tCOM is None
+iteration 359
+tCOM is None
+iteration 360
+tCOM is None
+iteration 361
+tCOM is None
+iteration 362
+tCOM is None
+iteration 363
+tCOM is None
+iteration 364
+tCOM is None
+iteration 365
+tCOM is None
+iteration 366
+tCOM is None
+iteration 367
+iteration 368
+tCOM is None
+iteration 369
+tCOM is None
+iteration 370
+tCOM is None
+iteration 371
+tCOM is None
+iteration 372
+tCOM is None
+iteration 373
+tCOM is None
+iteration 374
+tCOM is None
+iteration 375
+tCOM is None
+iteration 376
+tCOM is None
+iteration 377
+tCOM is None
+iteration 378
+tCOM is None
+iteration 379
+tCOM is None
+iteration 380
+tCOM is None
+iteration 381
+tCOM is None
+iteration 382
+tCOM is None
+iteration 383
+tCOM is None
+iteration 384
+tCOM is None
+iteration 385
+tCOM is None
+iteration 386
+tCOM is None
+iteration 387
+tCOM is None
+iteration 388
+tCOM is None
+iteration 389
+tCOM is None
+iteration 390
+tCOM is None
+iteration 391
+tCOM is None
+iteration 392
+tCOM is None
+iteration 393
+tCOM is None
+iteration 394
+tCOM is None
+iteration 395
+tCOM is None
+iteration 396
+tCOM is None
+iteration 397
+tCOM is None
+iteration 398
+tCOM is None
+iteration 399
+tCOM is None
+iteration 400
+tCOM is None
+iteration 401
+tCOM is None
+iteration 402
+tCOM is None
+iteration 403
+tCOM is None
+iteration 404
+iteration 405
+tCOM is None
+iteration 406
+tCOM is None
+iteration 407
+tCOM is None
+iteration 408
+tCOM is None
+iteration 409
+tCOM is None
+iteration 410
+tCOM is None
+iteration 411
+tCOM is None
+iteration 412
+tCOM is None
+iteration 413
+tCOM is None
+iteration 414
+tCOM is None
+iteration 415
+tCOM is None
+iteration 416
+tCOM is None
+iteration 417
+tCOM is None
+iteration 418
+tCOM is None
+iteration 419
+tCOM is None
+iteration 420
+tCOM is None
+iteration 421
+tCOM is None
+iteration 422
+tCOM is None
+iteration 423
+tCOM is None
+iteration 424
+tCOM is None
+iteration 425
+tCOM is None
+iteration 426
+tCOM is None
+iteration 427
+tCOM is None
+iteration 428
+tCOM is None
+iteration 429
+tCOM is None
+iteration 430
+tCOM is None
+iteration 431
+tCOM is None
+iteration 432
+tCOM is None
+iteration 433
+tCOM is None
+iteration 434
+tCOM is None
+iteration 435
+tCOM is None
+iteration 436
+tCOM is None
+iteration 437
+tCOM is None
+iteration 438
+tCOM is None
+iteration 439
+tCOM is None
+iteration 440
+tCOM is None
+iteration 441
+iteration 442
+tCOM is None
+iteration 443
+tCOM is None
+iteration 444
+tCOM is None
+iteration 445
+tCOM is None
+iteration 446
+tCOM is None
+iteration 447
+tCOM is None
+iteration 448
+tCOM is None
+iteration 449
+tCOM is None
+iteration 450
+tCOM is None
+iteration 451
+tCOM is None
+iteration 452
+tCOM is None
+iteration 453
+tCOM is None
+iteration 454
+tCOM is None
+iteration 455
+tCOM is None
+iteration 456
+tCOM is None
+iteration 457
+tCOM is None
+iteration 458
+tCOM is None
+iteration 459
+tCOM is None
+iteration 460
+tCOM is None
+iteration 461
+tCOM is None
+iteration 462
+tCOM is None
+iteration 463
+tCOM is None
+iteration 464
+tCOM is None
+iteration 465
+tCOM is None
+iteration 466
+tCOM is None
+iteration 467
+tCOM is None
+iteration 468
+tCOM is None
+iteration 469
+tCOM is None
+iteration 470
+tCOM is None
+iteration 471
+tCOM is None
+iteration 472
+tCOM is None
+iteration 473
+tCOM is None
+iteration 474
+tCOM is None
+iteration 475
+tCOM is None
+iteration 476
+tCOM is None
+iteration 477
+tCOM is None
+iteration 478
+iteration 479
+tCOM is None
+iteration 480
+tCOM is None
+iteration 481
+tCOM is None
+iteration 482
+tCOM is None
+iteration 483
+tCOM is None
+iteration 484
+tCOM is None
+iteration 485
+tCOM is None
+iteration 486
+tCOM is None
+iteration 487
+tCOM is None
+iteration 488
+tCOM is None
+iteration 489
+tCOM is None
+iteration 490
+tCOM is None
+iteration 491
+tCOM is None
+iteration 492
+tCOM is None
+iteration 493
+tCOM is None
+iteration 494
+tCOM is None
+iteration 495
+tCOM is None
+iteration 496
+tCOM is None
+iteration 497
+tCOM is None
+iteration 498
+tCOM is None
+iteration 499
+tCOM is None
+iteration 500
+tCOM is None
+iteration 501
+tCOM is None
+iteration 502
+tCOM is None
+iteration 503
+tCOM is None
+iteration 504
+tCOM is None
+iteration 505
+tCOM is None
+iteration 506
+tCOM is None
+iteration 507
+tCOM is None
+iteration 508
+tCOM is None
+iteration 509
+tCOM is None
+iteration 510
+tCOM is None
+iteration 511
+tCOM is None
+iteration 512
+tCOM is None
+iteration 513
+tCOM is None
+iteration 514
+tCOM is None
+iteration 515
+iteration 516
+tCOM is None
+iteration 517
+tCOM is None
+iteration 518
+tCOM is None
+iteration 519
+tCOM is None
+iteration 520
+tCOM is None
+iteration 521
+tCOM is None
+iteration 522
+tCOM is None
+iteration 523
+tCOM is None
+iteration 524
+tCOM is None
+iteration 525
+tCOM is None
+iteration 526
+tCOM is None
+iteration 527
+tCOM is None
+iteration 528
+tCOM is None
+iteration 529
+tCOM is None
+iteration 530
+tCOM is None
+iteration 531
+tCOM is None
+iteration 532
+tCOM is None
+iteration 533
+tCOM is None
+iteration 534
+tCOM is None
+iteration 535
+tCOM is None
+iteration 536
+tCOM is None
+iteration 537
+tCOM is None
+iteration 538
+tCOM is None
+iteration 539
+tCOM is None
+iteration 540
+tCOM is None
+iteration 541
+tCOM is None
+iteration 542
+tCOM is None
+iteration 543
+tCOM is None
+iteration 544
+tCOM is None
+iteration 545
+tCOM is None
+iteration 546
+tCOM is None
+iteration 547
+tCOM is None
+iteration 548
+tCOM is None
+iteration 549
+tCOM is None
+iteration 550
+tCOM is None
+iteration 551
+tCOM is None
+iteration 552
+iteration 553
+tCOM is None
+iteration 554
+tCOM is None
+iteration 555
+tCOM is None
+iteration 556
+tCOM is None
+iteration 557
+tCOM is None
+iteration 558
+tCOM is None
+iteration 559
+tCOM is None
+iteration 560
+tCOM is None
+iteration 561
+tCOM is None
+iteration 562
+tCOM is None
+iteration 563
+tCOM is None
+iteration 564
+tCOM is None
+iteration 565
+tCOM is None
+iteration 566
+tCOM is None
+iteration 567
+tCOM is None
+iteration 568
+tCOM is None
+iteration 569
+tCOM is None
+iteration 570
+tCOM is None
+iteration 571
+tCOM is None
+iteration 572
+tCOM is None
+iteration 573
+tCOM is None
+iteration 574
+tCOM is None
+iteration 575
+tCOM is None
+iteration 576
+tCOM is None
+iteration 577
+tCOM is None
+iteration 578
+tCOM is None
+iteration 579
+tCOM is None
+iteration 580
+tCOM is None
+iteration 581
+tCOM is None
+iteration 582
+tCOM is None
+iteration 583
+tCOM is None
+iteration 584
+tCOM is None
+iteration 585
+tCOM is None
+iteration 586
+tCOM is None
+iteration 587
+tCOM is None
+iteration 588
+tCOM is None
+iteration 589
+iteration 590
+tCOM is None
+iteration 591
+tCOM is None
+iteration 592
+tCOM is None
+iteration 593
+tCOM is None
+iteration 594
+tCOM is None
+iteration 595
+tCOM is None
+iteration 596
+tCOM is None
+iteration 597
+tCOM is None
+iteration 598
+tCOM is None
+iteration 599
+tCOM is None
+iteration 600
+tCOM is None
+iteration 601
+tCOM is None
+iteration 602
+tCOM is None
+iteration 603
+tCOM is None
+iteration 604
+tCOM is None
+iteration 605
+tCOM is None
+iteration 606
+tCOM is None
+iteration 607
+tCOM is None
+iteration 608
+tCOM is None
+iteration 609
+tCOM is None
+iteration 610
+tCOM is None
+iteration 611
+tCOM is None
+iteration 612
+tCOM is None
+iteration 613
+tCOM is None
+iteration 614
+tCOM is None
+iteration 615
+tCOM is None
+iteration 616
+tCOM is None
+iteration 617
+tCOM is None
+iteration 618
+tCOM is None
+iteration 619
+tCOM is None
+iteration 620
+tCOM is None
+iteration 621
+tCOM is None
+iteration 622
+tCOM is None
+iteration 623
+tCOM is None
+iteration 624
+tCOM is None
+iteration 625
+tCOM is None
+iteration 626
+iteration 627
+tCOM is None
+iteration 628
+tCOM is None
+iteration 629
+tCOM is None
+iteration 630
+tCOM is None
+iteration 631
+tCOM is None
+iteration 632
+tCOM is None
+iteration 633
+tCOM is None
+iteration 634
+tCOM is None
+iteration 635
+tCOM is None
+iteration 636
+tCOM is None
+iteration 637
+tCOM is None
+iteration 638
+tCOM is None
+iteration 639
+tCOM is None
+iteration 640
+tCOM is None
+iteration 641
+tCOM is None
+iteration 642
+tCOM is None
+iteration 643
+tCOM is None
+iteration 644
+tCOM is None
+iteration 645
+tCOM is None
+iteration 646
+tCOM is None
+iteration 647
+tCOM is None
+iteration 648
+tCOM is None
+iteration 649
+tCOM is None
+iteration 650
+tCOM is None
+iteration 651
+tCOM is None
+iteration 652
+tCOM is None
+iteration 653
+tCOM is None
+iteration 654
+tCOM is None
+iteration 655
+tCOM is None
+iteration 656
+tCOM is None
+iteration 657
+tCOM is None
+iteration 658
+tCOM is None
+iteration 659
+tCOM is None
+iteration 660
+tCOM is None
+iteration 661
+tCOM is None
+iteration 662
+tCOM is None
+iteration 663
+iteration 664
+tCOM is None
+iteration 665
+tCOM is None
+iteration 666
+tCOM is None
+iteration 667
+tCOM is None
+iteration 668
+tCOM is None
+iteration 669
+tCOM is None
+iteration 670
+tCOM is None
+iteration 671
+tCOM is None
+iteration 672
+tCOM is None
+iteration 673
+tCOM is None
+iteration 674
+tCOM is None
+iteration 675
+tCOM is None
+iteration 676
+tCOM is None
+iteration 677
+tCOM is None
+iteration 678
+tCOM is None
+iteration 679
+tCOM is None
+iteration 680
+tCOM is None
+iteration 681
+tCOM is None
+iteration 682
+tCOM is None
+iteration 683
+tCOM is None
+iteration 684
+tCOM is None
+iteration 685
+tCOM is None
+iteration 686
+tCOM is None
+iteration 687
+tCOM is None
+iteration 688
+tCOM is None
+iteration 689
+tCOM is None
+iteration 690
+0.7581435329011048
+iteration 691
+0.8876425691945935
+iteration 692
+0.7733410861672025
+iteration 693
+0.8462117008533023
+iteration 694
+0.8847713129871619
+iteration 695
+0.7904520232283663
+iteration 696
+0.7735411637750474
+iteration 697
+0.8062142638537728
+iteration 698
+0.9361478198867472
+iteration 699
+0.9256933589613343
+iteration 700
+iteration 701
+0.8052600159808874
+iteration 702
+0.8834378725343197
+iteration 703
+0.9238969598203163
+iteration 704
+0.9272769470560762
+iteration 705
+0.9044966654324664
+iteration 706
+0.8827902612293802
+iteration 707
+0.8757154825773961
+iteration 708
+0.9132409634340983
+iteration 709
+0.8812549901121848
+iteration 710
+0.5255552618266665
+iteration 711
+0.8883788222230516
+iteration 712
+0.7759852973384784
+iteration 713
+0.9077522085280832
+iteration 714
+0.8282050692884109
+iteration 715
+tCOM is None
+iteration 716
+tCOM is None
+iteration 717
+0.7132159830169278
+iteration 718
+0.9060003114492982
+iteration 719
+0.8920915861649086
+iteration 720
+0.9256965637746464
+iteration 721
+0.8847976177318739
+iteration 722
+0.9070390143723044
+iteration 723
+0.9406180408892792
+iteration 724
+0.8027555284008632
+iteration 725
+0.7689590140618687
+iteration 726
+0.8779156983446181
+iteration 727
+0.7742534185487875
+iteration 728
+0.8998280980230818
+iteration 729
+0.7386822274354821
+iteration 730
+0.9250299784769708
+iteration 731
+0.8794964654533428
+iteration 732
+0.9299809116778551
+iteration 733
+0.8722302901844237
+iteration 734
+0.8745608107745981
+iteration 735
+0.8643299080725687
+iteration 736
+0.8504044890407569
+iteration 737
+iteration 738
+0.8995576443471158
+iteration 739
+0.8840351710942195
+iteration 740
+0.9019615682860727
+iteration 741
+0.8287809958079184
+iteration 742
+0.7944320551100502
+iteration 743
+0.8874811201385331
+iteration 744
+0.9211011405747689
+iteration 745
+0.9026516713434087
+iteration 746
+0.8646524881496044
+iteration 747
+0.9147464190509855
+iteration 748
+0.9068241487251519
+iteration 749
+0.8922854178756341
+iteration 750
+0.9178975202594228
+iteration 751
+0.9087560303902363
+iteration 752
+0.6053962246671369
+iteration 753
+0.8973314076160132
+iteration 754
+0.8961531599514436
+iteration 755
+0.8764109529724093
+iteration 756
+0.9136811227739241
+iteration 757
+0.9209515428048008
+iteration 758
+0.8973812305676667
+iteration 759
+0.8951766539897055
+iteration 760
+0.8226477272888257
+iteration 761
+0.7103331373729701
+iteration 762
+0.9354951441530938
+iteration 763
+0.8550215860435608
+iteration 764
+0.8896259361436537
+iteration 765
+0.6024848040292017
+iteration 766
+0.9029652065881361
+iteration 767
+0.7110505966570022
+iteration 768
+0.9083752536107395
+iteration 769
+0.7473207013093603
+iteration 770
+0.8294127568474436
+iteration 771
+0.8790564254178175
+iteration 772
+0.9051189540711326
+iteration 773
+0.4147171577421388
+iteration 774
+iteration 775
+0.8467680639484177
+iteration 776
+0.8126996778263471
+iteration 777
+0.8088694604339611
+iteration 778
+0.8521963545269048
+iteration 779
+0.9231919495162989
+iteration 780
+0.8818486480774703
+iteration 781
+0.811296897434999
+iteration 782
+0.2913481317861857
+iteration 783
+0.3847507228547008
+iteration 784
+0.8555128023178615
+iteration 785
+0.8487948517584898
+iteration 786
+0.5484885964758867
+iteration 787
+0.918008245019515
+iteration 788
+0.8569408331880732
+iteration 789
+0.7568959353305194
+iteration 790
+0.7700295549186207
+iteration 791
+0.8642932162683377
+iteration 792
+0.8820316784442808
+iteration 793
+0.878350285254152
+iteration 794
+0.9251378794520086
+iteration 795
+0.8915039356125336
+iteration 796
+0.8653785559708302
+iteration 797
+0.9087598951797096
+iteration 798
+0.8703133554754171
+iteration 799
+0.8786874853713903
+iteration 800
+0.9149342893720466
+iteration 801
+0.8707237997947144
+iteration 802
+0.9069680325573312
+iteration 803
+0.881512394502686
+iteration 804
+0.8884523995472153
+iteration 805
+0.933275518028531
+iteration 806
+0.9263614175784931
+iteration 807
+0.8675424954960195
+iteration 808
+0.8625786293012732
+iteration 809
+0.8629353093279922
+iteration 810
+0.8190874421539492
+iteration 811
+iteration 812
+0.9235239476730821
+iteration 813
+0.9311161738438374
+iteration 814
+0.8526434024260272
+iteration 815
+0.8803261857254601
+iteration 816
+0.8804464909856886
+iteration 817
+0.8381344994554987
+iteration 818
+0.8754617887233732
+iteration 819
+0.9333547234380664
+iteration 820
+0.7947483792410371
+iteration 821
+0.7838917774249455
+iteration 822
+0.8514922950005477
+iteration 823
+0.8749034358061866
+iteration 824
+0.8900876489675509
+iteration 825
+0.893314436216915
+iteration 826
+0.869174844941375
+iteration 827
+0.8438607129580323
+iteration 828
+0.8936486876381273
+iteration 829
+0.8336241319780731
+iteration 830
+0.9293559301797025
+iteration 831
+0.8270580964215584
+iteration 832
+0.8515567984631313
+iteration 833
+0.8613586142327285
+iteration 834
+0.9365335299491394
+iteration 835
+0.9013897582090399
+iteration 836
+0.912724015825774
+iteration 837
+0.8863696776179383
+iteration 838
+0.8786525974033937
+iteration 839
+0.8554607914392174
+iteration 840
+0.8915313684569486
+iteration 841
+0.9143067886436618
+iteration 842
+0.8826713501259377
+iteration 843
+0.7549334293248269
+iteration 844
+0.9009686842269061
+iteration 845
+0.9262637871673036
+iteration 846
+0.9063384051124976
+iteration 847
+0.9275125872061684
+iteration 848
+iteration 849
+0.8894658705651604
+iteration 850
+0.931132567113714
+iteration 851
+0.9138490385206477
+iteration 852
+0.9162192003426974
+iteration 853
+0.876958748436672
+iteration 854
+0.8940938220702037
+iteration 855
+0.9440241898750952
+iteration 856
+0.9130431232750875
+iteration 857
+0.9140717442093851
+iteration 858
+0.8621332044337771
+iteration 859
+0.918759997346939
+iteration 860
+0.8969242010827249
+iteration 861
+0.9117167535901055
+iteration 862
+0.8935068867198064
+iteration 863
+0.7451585890387588
+iteration 864
+0.9061220181153201
+iteration 865
+0.8952717300984995
+iteration 866
+0.915522684593119
+iteration 867
+0.9284422511463399
+iteration 868
+0.8740681992863182
+iteration 869
+0.8941474266971763
+iteration 870
+0.8775776479592947
+iteration 871
+0.9286798360776374
+iteration 872
+0.9250715071140482
+iteration 873
+0.9075370076347384
+iteration 874
+0.8923403396890945
+iteration 875
+0.887585686537438
+iteration 876
+0.8716395597210086
+iteration 877
+0.9235083378686375
+iteration 878
+0.9391247743599102
+iteration 879
+0.8464839898963573
+iteration 880
+0.9086656378732398
+iteration 881
+0.8931539053046375
+iteration 882
+0.895893298600541
+iteration 883
+0.8741185209891716
+iteration 884
+0.9005554016777201
+iteration 885
+iteration 886
+0.90365835121051
+iteration 887
+0.8967554053038018
+iteration 888
+0.8641838458586308
+iteration 889
+0.9142117700368254
+iteration 890
+0.9006354450595448
+iteration 891
+0.8653998571156681
+iteration 892
+0.8458844903097663
+iteration 893
+0.8514607064116141
+iteration 894
+0.8607921168751049
+iteration 895
+0.8188467122132003
+iteration 896
+0.6676553151159953
+iteration 897
+0.8314381657206293
+iteration 898
+0.8460868386712062
+iteration 899
+0.7744003993802789
+iteration 900
+0.8910572819914375
+iteration 901
+0.8832434695369754
+iteration 902
+0.8530195378820254
+iteration 903
+0.9069527587988933
+iteration 904
+0.8617346252608433
+iteration 905
+0.8650275188720162
+iteration 906
+0.9194975259733993
+iteration 907
+0.8650614980119933
+iteration 908
+0.9081287264138929
+iteration 909
+0.931622636961007
+iteration 910
+0.8906023506247389
+iteration 911
+0.9279824232900741
+iteration 912
+0.9169788194771903
+iteration 913
+0.8965580893068756
+iteration 914
+0.8773108525502091
+iteration 915
+0.8257779612964635
+iteration 916
+0.9248650691112262
+iteration 917
+0.7426678540397018
+iteration 918
+0.8165866259417306
+iteration 919
+0.8842257343562584
+iteration 920
+0.8507150885259257
+iteration 921
+0.8994781868444515
+iteration 922
+iteration 923
+0.8864057221950763
+iteration 924
+0.8957334484845692
+iteration 925
+0.8843165998353205
+iteration 926
+0.8006374651021715
+iteration 927
+0.9165456277508768
+iteration 928
+0.8551668692595398
+iteration 929
+0.3524535960152264
+iteration 930
+0.8430841033876956
+iteration 931
+0.8801567507410056
+iteration 932
+0.7886171593802325
+iteration 933
+0.8426904791513249
+iteration 934
+0.8570408994012262
+iteration 935
+0.8872831512192052
+iteration 936
+0.8452017121704529
+iteration 937
+0.8763487612439745
+iteration 938
+0.7681667594452778
+iteration 939
+0.9097201516348856
+iteration 940
+0.7133969483232885
+iteration 941
+0.8145477921828378
+iteration 942
+0.7953731194700195
+iteration 943
+0.844926240570979
+iteration 944
+0.649612289306712
+iteration 945
+0.5527209740489016
+iteration 946
+0.8333533560785393
+iteration 947
+0.8498302964399485
+iteration 948
+0.8794912329559477
+iteration 949
+0.8207285648078138
+iteration 950
+0.262350774690258
+iteration 951
+0.7529503557994659
+iteration 952
+0.6687353869259636
+iteration 953
+0.689506864540826
+iteration 954
+0.8159881424052084
+iteration 955
+0.8210937093537733
+iteration 956
+0.8284931197175824
+iteration 957
+0.6651477654550765
+iteration 958
+0.7111280686887336
+iteration 959
+iteration 960
+0.7629522502257551
+iteration 961
+0.8456691104753704
+iteration 962
+0.9063703413626789
+iteration 963
+0.7702479407011907
+iteration 964
+0.8522414907857162
+iteration 965
+0.9116964352368679
+iteration 966
+0.8666721961917405
+iteration 967
+0.907959453089032
+iteration 968
+0.87542365430811
+iteration 969
+0.7825506052319186
+iteration 970
+0.7840496016481167
+iteration 971
+0.9379055309243753
+iteration 972
+0.9155920239506494
+iteration 973
+0.8698252293476433
+iteration 974
+0.9330238086051135
+iteration 975
+0.9088495469148693
+iteration 976
+0.79507334323959
+iteration 977
+0.8061259998317534
+iteration 978
+0.5945731798736662
+iteration 979
+tCOM is None
+iteration 980
+tCOM is None
+iteration 981
+0.862294612076101
+iteration 982
+0.8440260814571423
+iteration 983
+0.875702681582724
+iteration 984
+0.8478120183950215
+iteration 985
+0.8570242702749906
+iteration 986
+0.8312934832149205
+iteration 987
+0.9272544539894697
+iteration 988
+0.8547504092394931
+iteration 989
+0.8494500396888909
+iteration 990
+0.9049013697288184
+iteration 991
+0.8526054861295372
+iteration 992
+0.8580077305103408
+iteration 993
+0.846335100316628
+iteration 994
+0.8968399408236203
+iteration 995
+0.847741660673037
+iteration 996
+iteration 997
+0.8705262119095387
+iteration 998
+0.8385967215063176
+iteration 999
+0.7794732042599302
+iteration 1000
+0.8164153612621938
+Final save to file..
+Total time: 35.1573951244

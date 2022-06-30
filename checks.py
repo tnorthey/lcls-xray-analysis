@@ -1,7 +1,7 @@
 """various checks, returns False if any fail."""
 from load_get_functions import safe_get
 
-def checks(_evt, evr, x_ray, electron, diode_downstream, XRAYOFF, det_z):
+def checks(_evt, evr, XRAYOFF, x_ray, electron, diode_downstream, det_z):
     """various checks, returns False if any fail."""
     ########################################################
     ### BEGIN CHECKS

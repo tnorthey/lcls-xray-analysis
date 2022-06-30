@@ -31,7 +31,7 @@ smldata = ds.small_data('%sxint_binning_run%d.h5' %(scratch_dir, run), gather_in
 # load detector
 # this loading part is ~slow (2-3 secs),  maybe do not use inside loop
 front, diode_upstream, diode_downstream, x_ray, electron, uvint, stageencoder,\
-        ttfltpos, chamber_pressure, det_z, evr = load_detector_vars(experiment, run)
+        ttfltpos, chamber_pressure, det_z, evr = load_detector_vars(ds)
 
 npercentiles = len(percentiles)
 print('Binning detector pixel arrays into %d percentiles' % npercentiles)
@@ -73,7 +73,7 @@ for n, evt in enumerate(ds.events()):
 
     ds.break_after(Nevents)
 
-    if not checks(evt, evr, x_ray, electron, diode_downstream, XRAYOFF, det_z):
+    if not checks(evt, evr, XRAYOFF, x_ray, electron, diode_downstream, det_z):
         print('checks False')
         continue
     xint = get_xint(evt)
