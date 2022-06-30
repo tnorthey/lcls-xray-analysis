@@ -10,10 +10,8 @@ import sys
 sys.path.append('../')
 import numpy as np
 from scipy.signal import argrelextrema
-# psana, xtcav2
+# SLAC modules: psana, xtcav2
 from psana import MPIDataSource
-#import psana
-#from psana import *
 from xtcav2.LasingOnCharacterization import LasingOnCharacterization
 # import my functions
 from checks import checks
@@ -37,7 +35,7 @@ def peak_maxima(t, p):
     t, p must have same length; also returns delta_t between the peaks"""
     imax = argrelextrema(p, np.greater)
     imax = np.squeeze(imax)
-    try: 
+    try:
         len(imax) 
     except:
         return False   # if there's no len, exit
