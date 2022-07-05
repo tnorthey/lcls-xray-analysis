@@ -6,10 +6,12 @@ for "run" and "experiment"
 # python base modules
 import sys
 sys.path.append('../')
+sys.path.append('../../')
 import time
 START = time.time()  # initialise timer
 import numpy as np
 from scipy.signal import argrelextrema
+from scipy import interpolate
 # SLAC modules: psana, xtcav2
 from psana import MPIDataSource
 from xtcav2.LasingOnCharacterization import LasingOnCharacterization
@@ -63,6 +65,7 @@ def peak_maxima(t, p):
     return ipeak1, ipeak2, dt
 
 print('start of loop...')
+t_interp = np.linspace(-40, 40, num=50)
 for i, evt in enumerate(ds.events()):
     if i > Nevents:
         break
@@ -96,12 +99,19 @@ for i, evt in enumerate(ds.events()):
     # agreement between two methods
     agreement = XTCAVRetrieval.reconstructionAgreement()
     print(agreement)
+    # interpolation
+    pt_function = interpolate.interp1d(tCOM, powerCOM)
+    powerCOM_interp = pt_function(t_interp)
+    pt_function = interpolate.interp1d(tRMS, powerRMS)
+    powerRMS_interp = pt_function(t_interp)
     # save to file
     smldata.event(tCOM=tCOM, tRMS=tRMS, powerCOM=powerCOM, powerRMS=powerRMS,
                   dt_COM=dt_COM, dt_RMS=dt_RMS,
                   imax1_COM=imax1_COM, imax2_COM=imax2_COM,
                   imax1_RMS=imax1_RMS, imax2_RMS=imax2_RMS,
-                  agreement=agreement)
+                  agreement=agreement,
+		  powerCOM_interp=powerCOM_interp, powerRMS_interp=powerRMS_interp,
+		  t_interp=t_interp)
 
 # END for loop
 # final write to file

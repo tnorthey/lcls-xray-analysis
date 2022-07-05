@@ -17,7 +17,7 @@
 #SBATCH --mem=0 
 
 #This creates an output file
-#SBATCH -o xtcav_stats.log
+#SBATCH -o xtcav_stats_run83.log
 
 # This will email me when the job is finished (Just put your email in the second line)
 ##SBATCH --mail-type=END

@@ -11,19 +11,18 @@
 #SBATCH --tasks-per-node=1
 
 # Here's where the job name is defined (what shows up in the queue)
-#SBATCH -J test
+#SBATCH -J xtcav_stats
 
 #Here's where the memory is defined (setting to 0 should be maximum)
 #SBATCH --mem=0 
 
 #This creates an output file
-#SBATCH -o test.log
+#SBATCH -o xtcav_stats_runRUN_NUMBER.log
 
 # This will email me when the job is finished (Just put your email in the second line)
 ##SBATCH --mail-type=END
-##SBATCH --mail-user=thomas.northey@pm.me
+##SBATCH --mail-user=fake@email.com
 
 # This runs the job
 source /reg/g/psdm/etc/psconda.sh
-#mpirun python -u -m mpi4py.run test.py
-python test.py
+mpirun python -u -m mpi4py.run xtcav_stats.py
